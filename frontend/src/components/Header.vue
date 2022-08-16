@@ -12,11 +12,18 @@ export default defineComponent ({
     changeText: {
       type: String,
       required: false,
-      default: 'Vue is Fun'
+      default: 'Vue is Mega Fun'
     },
   },
   data() {
-    return {};  
+    return {
+      modalVisible: false,
+    };
+  },
+  method: {
+    toggleModal() {
+      this.modalVisible = !this.modalVisible
+    }
   }
 });
 </script>
@@ -26,6 +33,15 @@ export default defineComponent ({
     <a id='logo'>Pogjects</a>
     <div>
       {{ changeText }}
+    </div>
+    <button @click='toggleModal()'>
+      Login
+    </button>
+    <div v-if='modalVisible'>
+      modal here
+    </div>
+    <div v-else>
+      modal not here
     </div>
   </div>
 </template>

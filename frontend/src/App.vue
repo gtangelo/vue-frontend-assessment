@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import WebsiteHeader from './components/Header.vue'
+import WebsiteFooter from './components/Footer.vue';
 
 /**
  * App component. You are welcome to modify this file.
@@ -8,6 +9,7 @@ import WebsiteHeader from './components/Header.vue'
 export default defineComponent({
   components: {
     WebsiteHeader,
+    WebsiteFooter,
   },
   data() {
     return {};
@@ -16,8 +18,8 @@ export default defineComponent({
 </script>
 
 <template>
+  <WebsiteHeader />
   <main>
-    <WebsiteHeader />
     <div class='home-body'>
       <h2>
         Welcome brave soul... to the world of Vue.js
@@ -37,6 +39,7 @@ export default defineComponent({
       </h3>
     </div>
   </main>
+  <WebsiteFooter />
 </template>
 
 <style scoped>
