@@ -2,6 +2,7 @@
 import { defineComponent } from 'vue';
 import WebsiteHeader from './components/Header.vue'
 import WebsiteFooter from './components/Footer.vue';
+import LoginForm from './components/LoginForm.vue';
 
 /**
  * App component. You are welcome to modify this file.
@@ -10,6 +11,7 @@ export default defineComponent({
   components: {
     WebsiteHeader,
     WebsiteFooter,
+    LoginForm
   },
   data() {
     return {};
@@ -18,9 +20,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <WebsiteHeader />
+  <WebsiteHeader change-text='Vue is Mega Fun' />
   <main>
-    <div class='home-body'>
+    <!-- <div class='home-body'>
       <h2>
         Welcome brave soul... to the world of Vue.js
       </h2>
@@ -37,7 +39,8 @@ export default defineComponent({
           projects-frontend-assessment
         </a>
       </h3>
-    </div>
+    </div> -->
+    <LoginForm />
   </main>
   <WebsiteFooter />
 </template>

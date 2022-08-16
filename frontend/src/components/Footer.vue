@@ -1,11 +1,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-/**
- * Header component. You are welcome to modify this file although it might break the challenge.
- * Only modify it if you are confident of your abilities =)
- */
-
 export default defineComponent ({
   name: 'WebsiteFooter',
   props: {
@@ -32,10 +27,10 @@ export default defineComponent ({
 <style scoped>
   .footer-container {
     width: 100%;
-    height: 50px;
+    height: 100px;
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     position: absolute;
     bottom: 0;
     left: 0;
